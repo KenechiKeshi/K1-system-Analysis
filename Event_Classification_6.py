@@ -339,7 +339,7 @@ def optimiser(n_estimators, max_depth, learning_rate, n_iter, test_size, colsamp
     return alg, nn_model, scaler
 
 Local_XGB, Local_Deep, Local_Scaler = optimiser(n_estimators=10000,  max_depth=4, learning_rate=0.01, n_iter=10001, test_size=0.3)
-'''
+
 xgb, deep, scaler = Local_XGB, Local_Deep, Local_Scaler
 
 # Save the models
@@ -352,6 +352,6 @@ with open('Deep_NN_5.pkl', 'wb') as f:
 # Save the Scaler
 with open('Scaler_5.pkl', 'wb') as f:
     pickle.dump(scaler, f)
-'''
+
 
 
